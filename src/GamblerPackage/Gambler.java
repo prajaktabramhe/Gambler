@@ -11,10 +11,10 @@ public class Gambler
 	{
 		double stakepercentage;
 		Random rand=new Random();
-		while (true)
+		int i=1;
+		while (i<=20)
 		{
 			int temp = rand.nextInt(2);
-			System.out.println(temp);
 			if(temp==1)
 			{
 				EveryDayStake=EveryDayStake+1;
@@ -23,17 +23,8 @@ public class Gambler
 			{
 				EveryDayStake=EveryDayStake-1;
 			}
-			
-			if(EveryDayStake==150)
-			{
-				System.out.println(EveryDayStake+":won done for the day");
-				break;
-			}
-			else if(EveryDayStake==50)
-			{
-				System.out.println(EveryDayStake+":lose done for the day");
-				break;
-			}
+			System.out.println("total amount "+EveryDayStake+" for the day:"+i);
+			i++;
 		}
 	}
 	public static void main(String[] args)
