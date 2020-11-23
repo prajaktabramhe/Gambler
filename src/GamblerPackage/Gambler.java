@@ -14,16 +14,19 @@ public class Gambler
 		int i=1;
 		while (i<=20)
 		{
+			System.out.println("day:"+i);
 			int temp = rand.nextInt(2);
 			if(temp==1)
 			{
 				EveryDayStake=EveryDayStake+1;
+				System.out.print("won today by 1 ");
 			}
 			else
 			{
 				EveryDayStake=EveryDayStake-1;
+				System.out.print("lost today by 1  ");
 			}
-			System.out.println("total amount "+EveryDayStake+" for the day:"+i);
+			System.out.println("total amount "+EveryDayStake);
 			i++;
 		}
 	}
